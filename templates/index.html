@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AQI Smart Dashboard</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2>🌿 AQI Smart</h2>
+
+    <nav>
+      <a onclick="showSection('dashboard', this)" class="active">Dashboard</a>
+      <a onclick="showSection('analytics', this)">Analytics</a>
+      <a onclick="showSection('history', this)">History</a>
+      <a onclick="showSection('alerts', this)">Alerts</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+      <h1>Real-Time Air Quality Monitoring</h1>
+      <div id="clock"></div>
+    </header>
+
+    <!-- ================= DASHBOARD ================= -->
+    <section id="dashboard">
+
+      <!-- DATA CARDS -->
+      <section class="cards">
+
+        <div class="card">
+          <h3>PM2.5</h3>
+          <p id="pm">--</p>
+        </div>
+
+        <div class="card">
+          <h3>Gas</h3>
+          <p id="gas">--</p>
+        </div>
+
+        <div class="card">
+          <h3>Temperature</h3>
+          <p id="temp">-- °C</p>
+        </div>
+
+        <div class="card">
+          <h3>Humidity</h3>
+          <p id="hum">-- %</p>
+        </div>
+
+      </section>
+
+      <!-- STATUS -->
+      <section class="status">
+        <h2 id="status">AQI Status: --</h2>
+      </section>
+
+      <!-- DASHBOARD GRAPH -->
+      <section class="chart-box">
+        <h2>PM2.5 Trend</h2>
+        <canvas id="chart"></canvas>
+      </section>
+
+    </section>
+
+    <!-- ================= ANALYTICS ================= -->
+    <section id="analytics" class="hidden analytics-box">
+
+      <h2>Analytics</h2>
+
+      <canvas id="analyticsChart"></canvas>
+
+    </section>
+
+    <!-- ================= HISTORY ================= -->
+    <section id="history" class="hidden">
+
+      <h2>Session History</h2>
+
+      <table id="historyTable">
+        <tr>
+          <th>Date & Time</th>
+          <th>PM2.5</th>
+          <th>Gas</th>
+          <th>Temperature</th>
+          <th>Humidity</th>
+        </tr>
+      </table>
+
+    </section>
+
+    <!-- ================= ALERTS ================= -->
+    <section id="alerts" class="hidden">
+
+      <h2>Alerts</h2>
+
+      <ul id="alertList"></ul>
+
+    </section>
+
+  </main>
+
+</div>
+
+<!-- JS -->
+<script src="/static/script.js"></script>
+
+</body>
+</html>

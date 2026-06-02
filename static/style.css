@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  color: white;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  padding: 20px;
+  background: #0b1220;
+}
+
+.sidebar h2 {
+  margin-bottom: 25px;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #cbd5e1;
+  transition: 0.3s;
+}
+
+/* Active menu highlight */
+.sidebar nav a.active {
+  background: #2563eb;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 0 10px #2563eb;
+}
+
+.sidebar nav a:hover {
+  background: #1d4ed8;
+  color: white;
+}
+
+/* Main area */
+.main {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  background: #111827;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 25px;
+}
+
+.card {
+  padding: 25px;
+  background: linear-gradient(145deg,#1f2937,#111827);
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 0 18px rgba(0,0,0,0.4);
+}
+
+.card p {
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Status box */
+.status {
+  background: #111827;
+  padding: 18px;
+  text-align: center;
+  border-radius: 12px;
+  font-size: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* DASHBOARD CHART BOX */
+.chart-box {
+  background: linear-gradient(145deg,#111827,#020617);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* ANALYTICS SECTION BOX */
+.analytics-box {
+  background: linear-gradient(145deg,#1e3a8a,#020617);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* History table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #111827;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th {
+  background: #1e40af;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #374151;
+  text-align: center;
+}
+
+/* Alerts */
+li {
+  padding: 12px;
+  margin: 8px 0;
+  background: #7f1d1d;
+  border-radius: 8px;
+  box-shadow: 0 0 8px #7f1d1d;
+}
+
+/* Hidden sections */
+.hidden {
+  display: none;
+}
+/* ===== GLOBAL SECTION SPACING ===== */
+
+.main > section {
+  margin-top: 28px;
+}
+
+/* Extra spacing for dashboard elements */
+
+.cards {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.status {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.chart-box {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Title spacing */
+
+.topbar {
+  margin-bottom: 25px;
+}
+
+/* Optional: Add subtle separation effect */
+
+.status,
+.chart-box,
+.card {
+  transition: transform 0.2s ease;
+}
+
+.status:hover,
+.chart-box:hover,
+.card:hover {
+  transform: translateY(-2px);
+}
+.chart-box {
+  border-top: 2px solid rgba(255,255,255,0.1);
+  padding-top: 25px;
+}
