@@ -294,8 +294,7 @@ aqi-dashboard/
 
 ## 🎥 Working Demo
 
-[![Watch Demo](https://img.shields.io/badge/Watch-Demo-red?style=for-the-badge)](videos/AQI_Monitoring_Sys.mp4)
-
+<video src="videos/AQI_Monitoring_Sys.mp4" controls width="100%"></video>
 
 The demo covers:
 - Live sensor data acquisition
