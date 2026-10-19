@@ -294,7 +294,8 @@ aqi-dashboard/
 
 ## 🎥 Working Demo
 
-<video src="videos/AQI_Monitoring_Sys.mp4" controls width="100%"></video>
+<!-- <video src="videos/AQI_Monitoring_Sys.mp4" controls width="100%"></video> -->
+[![Watch Demo](https://githubusercontent.com)](https://githubusercontent.com)
 
 The demo covers:
 - Live sensor data acquisition
